@@ -5,7 +5,7 @@ import LoginPage from "../pages/loginPage";
 import MainPage from "../pages/mainPage";
 
 
-describe ("tasks", () => {
+describe ("logout", () => {
     beforeEach(() => {
         loginPage.loggedIn() 
     })

@@ -4,7 +4,7 @@ import LoginPage from "../pages/loginPage";
 import MainPage from "../pages/mainPage";
 
 
-describe ("tasks", () => {
+describe ("login", () => {
     beforeEach(() => {
         cy.visit('https://reebelo.com.au/')
 
@@ -20,17 +20,12 @@ describe ("tasks", () => {
     .should('be.visible')
     .click()
 
-    // cy.contains('Australian Capital Territory')
-    // .should('be.visible')
-
     cy.contains('Sign in')
     .click({force: true})
   
     const VALID_EMAIL = 't@gmail.com'
     const VALID_PASS = '123456789'
 
-  
-    // cy.get("input[placeholder='Email']")
     loginPage.emailField()
     .should('be.visible')
     .type(VALID_EMAIL)
